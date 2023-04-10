@@ -1,0 +1,30 @@
+<div class="account-page-container">
+
+  <div class="user-info-container">
+    <div class="blue-container"></div>
+    <div class="oval-container">
+      <div>
+        <img src="assets/user_icon.svg" alt="User icon" class="user-icon"/>
+      </div>
+    </div>
+    <div class="text-container" *ngIf="(user | async) as info">
+      <p class="user-name">{{info?.given_name}} {{info?.family_name}}</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Email</td>
+            <td>{{info?.email}}</td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td>{{info?.phone_number}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="logout-button-container">
+    <fa-logout></fa-logout>
+  </div>
+
+</div>

@@ -1,0 +1,82 @@
+@use '../../../styles';
+.logout-button-container {
+  display: flex;
+  margin-top: 20px;
+  fa-logout {
+    margin: 0px auto 40px;
+    display: block;
+  }
+}
+
+
+.text-container {
+  padding-top: 40px;
+}
+
+.user-info-container {
+  width: 866px;
+  height: 219px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 20px rgba(234, 234, 234, 0.8);
+  background-color: #fff;
+  margin: auto;
+}
+
+.blue-container {
+  width: 100px;
+  height: 219px;
+  margin: 0 109px 0 0;
+  border-radius: 10px;
+  background-color: #083b94;
+  float: left;
+}
+
+.oval-container {
+  width: 139px;
+  height: 139px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 40px 40px 40px -185px;
+  background-color: #fff;
+  border-radius: 100px;
+  float: left;
+  overflow: hidden;
+  div {
+    background-color: #a0a0a0;
+    border-radius: 100px;
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .user-icon {
+      width: 80px;
+      margin: auto;
+      object-fit: contain;
+      display: block;
+    }
+  }
+}
+
+.user-name {
+  font-family: styles.$font-stack;
+  font-size: 24px;
+  font-weight: 500;
+  color: #083b94;
+  margin: 0;
+}
+
+table {
+  width: 600px;
+  padding: 10px 0;
+  td {
+    font-family: styles.$font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    color: #424242;
+    padding-top: 20px;
+  }
+}
